@@ -1,0 +1,44 @@
+//
+/**
+ * Rodrigo Castro #14092
+ * Hugo Noriega #14097
+ * Algoritmos y Estructuras de Datos
+ * 
+ * Clase : HuffManArbol
+ * Pide ingreso de datos y muestra en pantalla el resultado de la frecuencia y el codigo huffman
+ * de cada caracter.
+ *
+ */
+public class NodoHuffman extends HuffmanArbol {
+	//Inicializacion de variables
+	// Al no existir nada en el arbol, debe apuntar  un nulo
+	private HuffmanArbol left = null;
+	private HuffmanArbol right =null;
+
+	public NodoHuffman(HuffmanArbol izq, HuffmanArbol der ) {
+		super( der.getFrec()+ izq.getFrec() ); 
+		// TODO Auto-generated constructor stub
+	}
+	
+	//Auto-generated
+
+	public HuffmanArbol getLeft() {
+		return left;
+	}
+
+	public void setLeft(HuffmanArbol left) {
+		this.left = left;
+	}
+
+	public HuffmanArbol getRight() {
+		return right;
+	}
+
+	public void setRight(HuffmanArbol right) {
+		this.right = right;
+	}
+	
+	
+
+	
+}
